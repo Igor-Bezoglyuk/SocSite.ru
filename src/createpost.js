@@ -1,7 +1,6 @@
 const Createpost = () => {
   return (
-    <div id="Kontentblock" class="float-end">
-    <div class="Create-Post float-start">
+    <div class="Create-Post float-start text-start">
       <form class=" mt-4">
          <div class="t-3">
           <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
@@ -13,7 +12,6 @@ const Createpost = () => {
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-     </div>
      </div>
   );
 }
