@@ -1,8 +1,10 @@
+import Createpost from './createpost.js';
+
 const Profile = () => {
   return (
     <div id="article">
     <div id="Kontent">
-	  <div id="Kontentblock" class="float-end">
+	  <div id="Kontentblock" class="float-start ps-5">
 
     <div class="Kontent-Block-img mb-4"></div>
      
@@ -17,6 +19,7 @@ const Profile = () => {
         <li class="spisok-profile-li list-group-item bg-transparent">Silka</li>
       </ul>
      </div>
+     <Createpost/>
      </div>
      </div>
      </div>
