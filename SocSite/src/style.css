@@ -1,0 +1,106 @@
+body{
+	margin:0px;
+	font-family: roboto,arial,sans-serif, monospace;
+}
+header{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height:auto;
+	z-index: 999;
+}
+.Menu{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 200px;
+	background: whitesmoke;
+	list-style: none;
+	border-radius: 0px 0px 10px 0px;
+	padding:20px;
+}
+.Menuli{
+	position: relative;
+	top: 0;
+	right: 0%;
+	text-align: left;
+	font-family: roboto;
+	font-size: 17px;
+	font-weight: 300px;
+	display: block;
+	margin-bottom:25px;
+}
+.MenuSilka{
+	position: relative;
+	text-decoration: none;
+	color: grey;
+}
+
+/*____________________________________________________________________________________________________________*/
+article{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height: 100%;
+}
+/*____________________________________________________________________________________________________________*/
+#Kontent{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 100%;
+	height:auto;
+}
+#Kontentblock{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 79%;
+}
+.Kontent-Block-img{
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background: url(../img/BackHeader.jpg) no-repeat 50% 50%/100%;
+}
+.Kontent-Profil-Block{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width:610px;
+}
+
+.Kontent-profile-img{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 300px;
+	height:auto;
+}
+.spisok-profile{
+	position: relative;
+	top: 0;
+	right: 0%;
+    width: 300px;
+    list-style: none;
+    padding:0px;
+    border:solid 1px grey;
+}
+.spisok-profile-li{
+	font-family:roboto;
+	font-size: 19px;
+	font-weight: 400;
+	margin-bottom:20px;
+	border-bottom: solid 1px grey;
+	padding:5px;
+}
+.Create-Post{
+	position: relative;
+	top: 0;
+	right: 0%;
+	width: 75%;
+	height: auto;
+}
+/*____________________________________________________________________________________________________________*/
