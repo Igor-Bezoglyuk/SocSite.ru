@@ -1,17 +1,17 @@
+import {NavLink} from "react-router-dom";
 const VerMenu =()=> {
   return (
-    <div id="article">
+
     	<div id="Kontent">
     	<ul class="Menu float-start">
-    	<li class="Menuli"><a class="MenuSilka" href="">Home</a></li>
-    	<li class="Menuli"><a class="MenuSilka" href="">Gallery</a></li>
-    	<li class="Menuli"><a class="MenuSilka" href="">Group</a></li>
-    	<li class="Menuli"><a class="MenuSilka" href="">Music</a></li>
-    	<li class="Menuli"><a class="MenuSilka" href="">Game</a></li>
-    	<li class="Menuli"><a class="MenuSilka" href="">Option</a></li>
+    	<li class="Menuli"><NavLink class="MenuSilka" to="/Profile">Home</NavLink></li>
+    	<li class="Menuli"><NavLink class="MenuSilka" to="/Massage">Massage</NavLink></li>
+    	<li class="Menuli"><NavLink class="MenuSilka" to="/News">News</NavLink></li>
+    	<li class="Menuli"><NavLink class="MenuSilka" to="/Music">Music</NavLink></li>
+    	<li class="Menuli"><NavLink class="MenuSilka" to="/Game">Game</NavLink></li>
+    	<li class="Menuli"><NavLink class="MenuSilka" to="/Option">Option</NavLink></li>
         </ul>
         </div>
-    	</div>
   );
 }
 
