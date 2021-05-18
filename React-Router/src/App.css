@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -44,7 +45,7 @@ body{
   margin:0px;
   font-family: roboto,arial,sans-serif, monospace;
 }
-.Header{
+.header{
   position: relative;
   top: 0;
   right: 0%;
@@ -61,6 +62,7 @@ body{
   list-style: none;
   border-radius: 0px 0px 10px 0px;
   padding:20px;
+  z-index: 999;
 }
 .Menuli{
   position: relative;
@@ -85,7 +87,7 @@ body{
   top: 0;
   right: 0%;
   width: 100%;
-  height: 100%;
+  height: auto;
 }
 /*____________________________________________________________________________________________________________*/
 #Kontent{
@@ -93,7 +95,7 @@ body{
   top: 0;
   right: 0%;
   width: 100%;
-  height:auto;
+  height:880px;
 }
 #Kontentblock{
   position: relative;
@@ -149,11 +151,82 @@ body{
 }
 /*____________________________________________________________________________________________________________*/
 
-#KontentPage2{
+#Kontent2{
   position: relative;
   top: 0;
   right: 0%;
   width: 100%;
-  height: 100%;
+  height: 900px;
   background: grey;
+}
+
+/*____________________________________________________________________________________________________________*/
+#MassageContent{
+  position:relative;
+  top: 0;
+  right:0%;
+  width: 100%;
+  height: auto;
+}
+.Massage-Blocks{
+  position:relative;
+  top:0;
+  right: 0%;
+  display: inline-block;
+  margin:5px;
+}
+.Massage-Spisok{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 25%;
+}
+.Massage-Spisok-Li{
+  position: relative;
+  top: 0;
+  right: 0%;
+  font-family: roboto;
+  margin:10px;
+  padding-top:40px ;
+  transition: 0.4s;
+}
+.Massage-Spisok-Li:hover{
+  transform: scale(1.2);
+}
+.Massage-Spisok-silka{
+  position: relative;
+  top: 0;
+  right:0%;
+  text-decoration: none;
+  color: #282c34;
+  cursor: pointer;
+}
+.Massage-Spisok-silka:hover{
+  color: black;
+}
+.Massage-Posts{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 30%;
+  text-align: left;
+  font-family: Roboto;
+  background: whiteSmoke;
+  border-radius:10px;
+}
+.Massage-Posts-Img{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 80px;
+  height: 80px;
+}
+/*____________________________________________________________________________________________________________*/
+#footer{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: 200px;
+  background: #f8f9fa;
 }
