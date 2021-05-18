@@ -1,4 +1,3 @@
-import Menu from './menu.js';
 
 const Header = () => {
   return (
@@ -16,7 +15,6 @@ const Header = () => {
     </div>
   </div>
    </nav>
-   <Menu/>
     </div>
   );
 }
