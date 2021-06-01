@@ -1,32 +1,30 @@
-const Post = (props) =>{
+import '../App.css';
+import Avatar from '../img/avatarpost.png';
+
+const Posts = (props) =>{
   return(
-    <div class="Create-Post float-start text-start">
-     <form class=" mt-4">
-        <div class="t-3">
-         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
-         <div id="emailHelp" class="form-text">{props.Posts}</div>
-       </div>
-       <div class="mb-3 form-check">
-         <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-         <label class="form-check-label" for="exampleCheck1">{props.checkbox}</label>
-       </div>
-       <button type="submit" class="btn btn-primary">{props.botton}</button>
-       </form>
+    <div class="Post col w-25 text-start mt-5">
+    <div class="PostBlock w-100 float-start mb-4">
+       <img class="Post-Img float-start me-3" src={Avatar} alt={"Avatar"}/>
+       <h5 class="Post-Title">{props.TitleLogin}</h5>
+       <p class="Post-Stroka">{props.StrokaSub}</p>
+    </div>
     </div>
   );
 }
 const Home = (props) => {
   let postCreate=[
-  { Posts:"Andrey"},
-  { checkbox:"Проверка"},
-  { botton:"Создать"},
+  { TitleLogin:"Andrey", StrokaSub:"Подробный важный, текст поста"},
+  { TitleLogin:"Andrey", StrokaSub:"Подробный важный, текст поста"},
+  { TitleLogin:"Andrey", StrokaSub:"Подробный важный, текст поста"},
+  { TitleLogin:"Andrey", StrokaSub:"Подробный важный, текст поста"}
   ]
 
-  let postMAP = postCreate.map(p => <Post Posts={p.Posts} checkbox={p.checkbox} botton={p.botton} />)
+  let postMAP = postCreate.map(p => <Posts TitleLogin={p.TitleLogin} StrokaSub={p.StrokaSub}/>)
   return (
     <>
     <section id="Kontent">
-	  <div id="Kontentblock" class="float-start ps-5">
+    <div id="Kontentblock" class="float-start ps-5">
 
     <div class="Kontent-Block-img mb-4"></div>
 
@@ -41,10 +39,21 @@ const Home = (props) => {
         <li class="spisok-profile-li list-group-item bg-transparent">Silka</li>
       </ul>
      </div>
-     {postMAP}
+     <div class="Create-Post float-start text-start mb-5">
+     <form class=" mt-4">
+        <div class="t-3">
+         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+         <div id="emailHelp" class="form-text">Ut enim ad minim veniam</div>
+       </div>
+       <div class="mb-3 form-check">
+         <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
+         <label class="form-check-label" for="exampleCheck1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
+       </div>
+       <button type="submit" class="btn btn-primary">Button</button>
+       </form>
+    </div>
+       {postMAP}
      </div>
-     </section>
-     <section id="Kontent2">
      </section>
      </>
   );
