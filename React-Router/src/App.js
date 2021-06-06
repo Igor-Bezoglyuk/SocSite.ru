@@ -13,19 +13,19 @@ import Option from './pages/Option.js';
 import { BrowserRouter,Route} from "react-router-dom";
 
 
-const App = () => {
+const App = (props) => {
   return (
   	<BrowserRouter>
   	<div className="App">
   	<Header/>
   	<div>
   	<Menu/>
-  	<Route exact path="/Home" component={Home} />
-  	<Route exact path="/Massage" component={Massage} />
-  	<Route exact path="/News" component={News} />
-  	<Route exact path="/Music" component={Music} />
-  	<Route exact path="/Games" component={Games} />
-  	<Route exact path="/Option" component={Option} />
+  	<Route path="/Home" render={()=><Home postCreate={props.dataArray.postCreate}/>} />
+  	<Route path="/Massage" render={()=><Massage dialogs={props.dataArray.dialogs}  massage={props.dataArray.massage}/>} />
+  	<Route path="/News" render={()=><News/>} />
+  	<Route path="/Music" render={()=><Music/>} />
+  	<Route path="/Games" render={()=><Games/>} />
+  	<Route path="/Option" render={()=><Option/>} />
   	</div>
     </div>
     </BrowserRouter>
