@@ -1,5 +1,5 @@
 import '../App.css';
-import Avatar from '../img/avatarpost.png';
+import Avatar from '../img/avataricon.png';
 
 const Posts = (props) =>{
   return(
@@ -13,14 +13,8 @@ const Posts = (props) =>{
   );
 }
 const Home = (props) => {
-  let postCreate=[
-  { TitleLogin:"Andrey", StrokaSub:"Подробный важный, текст поста"},
-  { TitleLogin:"Andrey", StrokaSub:"Подробный важный, текст поста"},
-  { TitleLogin:"Andrey", StrokaSub:"Подробный важный, текст поста"},
-  { TitleLogin:"Andrey", StrokaSub:"Подробный важный, текст поста"}
-  ]
 
-  let postMAP = postCreate.map(p => <Posts TitleLogin={p.TitleLogin} StrokaSub={p.StrokaSub}/>)
+  let postMAP = props.postCreate.map(p => <Posts TitleLogin={p.TitleLogin} StrokaSub={p.StrokaSub}/>)
   return (
     <>
     <section id="Kontent">

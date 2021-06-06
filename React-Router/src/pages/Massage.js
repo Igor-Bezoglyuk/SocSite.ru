@@ -21,23 +21,10 @@ const Mail = (props) =>{
   );
 }
 const Massage = (props) => {
-  let dialogs=[
-  {id:1, name:"Andrey"},
-  {id:2, name:"Ivan"},
-  {id:3, name:"Oleg"},
-  {id:4, name:"Maxon"},
-  {id:5, name:"Olga"}
-  ]
-  let massage=[
-    {LogoName:"Andrey", Stroka:"Привет"},
-    {LogoName:"Ivan", Stroka:"Как дела?"},
-    {LogoName:"Oleg", Stroka:"Да норм по тихому?"},
-    {LogoName:"Maxon", Stroka:"Я немогу понять!"},
-    {LogoName:"Olga", Stroka:"Где компанента?"},
-  ]
 
-  let dialMAP = dialogs.map(d => <Users name={d.name} id={d.id}/>)
-  let massMAP = massage.map(m => <Mail LogoName={m.LogoNam} Stroka={m.Stroka}/>)
+  let dialMAP = props.dialogs.map(d => <Users name={d.name} id={d.id}/>)
+  let massMAP = props.massage.map(m => <Mail LogoName={m.LogoNam} Stroka={m.Stroka}/>)
+
   return (
   	<section id="MassageContent">
     <div class="d-flex justify-content-center flex-wrap">
