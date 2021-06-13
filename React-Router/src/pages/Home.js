@@ -1,5 +1,6 @@
 import '../App.css';
 import Avatar from '../img/avataricon.png';
+import React from 'react';
 
 const Posts = (props) =>{
   return(
@@ -15,6 +16,14 @@ const Posts = (props) =>{
 const Home = (props) => {
 
   let postMAP = props.postCreate.map(p => <Posts TitleLogin={p.TitleLogin} StrokaSub={p.StrokaSub}/>)
+
+  let newPostElement= React.createRef();
+
+  let Test=()=>{
+    let posttext= newPostElement.current.value;
+    props.addPost1(posttext);
+  }
+
   return (
     <>
     <section id="Kontent">
@@ -36,14 +45,14 @@ const Home = (props) => {
      <div class="Create-Post float-start text-start mb-5">
      <form class=" mt-4">
         <div class="t-3">
-         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+         <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ref={newPostElement}/>
          <div id="emailHelp" class="form-text">Ut enim ad minim veniam</div>
        </div>
        <div class="mb-3 form-check">
          <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
          <label class="form-check-label" for="exampleCheck1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</label>
        </div>
-       <button type="submit" class="btn btn-primary">Button</button>
+       <button type="button" class="btn btn-primary" onClick={Test}>Button</button>
        </form>
     </div>
        {postMAP}
