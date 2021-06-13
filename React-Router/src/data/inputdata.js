@@ -1,3 +1,14 @@
+import {renderalways} from "../render";
+
+export let addPost1=(postMessage)=>{
+let newpost={
+  TitleLogin:postMessage,
+  StrokaSub:postMessage
+};
+data.postCreate.push(newpost);
+renderalways()
+}
+
 let data ={
   dialogs:[
   {id:1, name:"Andrey"},
