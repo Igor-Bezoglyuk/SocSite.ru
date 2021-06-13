@@ -1,16 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import data from './data/inputdata.js';
 import reportWebVitals from './reportWebVitals';
+import {renderalways} from "./render";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App dataArray={data}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+renderalways();
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
