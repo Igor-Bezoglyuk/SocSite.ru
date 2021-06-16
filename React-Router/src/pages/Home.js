@@ -18,10 +18,13 @@ const Home = (props) => {
   let postMAP = props.postCreate.map(p => <Posts TitleLogin={p.TitleLogin} StrokaSub={p.StrokaSub}/>)
 
   let newPostElement= React.createRef();
+  let newPostImage = React.createRef();
 
   let Test=()=>{
     let posttext= newPostElement.current.value;
+    let postimg= newPostImage.current.value;
     props.addPost1(posttext);
+    props.addPost1(postimg);
   }
 
   return (
@@ -43,10 +46,11 @@ const Home = (props) => {
       </ul>
      </div>
      <div class="Create-Post float-start text-start mb-5">
-     <form class=" mt-4">
+     <form class=" mt-4" enctype="multipart/form-data">
         <div class="t-3">
          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" ref={newPostElement}/>
          <div id="emailHelp" class="form-text">Ut enim ad minim veniam</div>
+         <input type="file" class="form-file-img mt-2 mb-2" ref={newPostImage}/>
        </div>
        <div class="mb-3 form-check">
          <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
