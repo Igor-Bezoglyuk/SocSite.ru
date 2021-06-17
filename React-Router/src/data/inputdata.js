@@ -9,6 +9,15 @@ data.postCreate.push(newpost);
 renderalways()
 }
 
+export let addPost2=(postMessageText)=>{
+  let newpost={
+    LogoName:postMessageText,
+    Stroka:postMessageText
+  };
+  data.massage.push(newpost);
+  renderalways()
+  }
+
 let data ={
   dialogs:[
   {id:1, name:"Andrey"},
