@@ -21,7 +21,7 @@ const App = (props) => {
   	<div>
   	<Menu/>
   	<Route path="/Home" render={()=><Home postCreate={props.dataArray.postCreate} addPost1={props.addPost1}/>} />
-  	<Route path="/Massage" render={()=><Massage dialogs={props.dataArray.dialogs}  massage={props.dataArray.massage}/>} />
+  	<Route path="/Massage" render={()=><Massage dialogs={props.dataArray.dialogs}  massage={props.dataArray.massage} addPost2={props.addPost2}/>} />
   	<Route path="/News" render={()=><News/>} />
   	<Route path="/Music" render={()=><Music/>} />
   	<Route path="/Games" render={()=><Games/>} />
