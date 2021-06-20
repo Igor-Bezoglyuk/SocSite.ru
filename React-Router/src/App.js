@@ -20,7 +20,7 @@ const App = (props) => {
   	<Header/>
   	<div>
   	<Menu/>
-  	<Route path="/Home" render={()=><Home postCreate={props.dataArray.postCreate} addPost1={props.addPost1}/>} />
+  	<Route path="/Home" render={()=><Home postCreate={props.dataArray.postCreate} addPost1={props.addPost1} addImg1={props.addImg1}/>}/>
   	<Route path="/Massage" render={()=><Massage dialogs={props.dataArray.dialogs}  massage={props.dataArray.massage} addPost2={props.addPost2}/>} />
   	<Route path="/News" render={()=><News/>} />
   	<Route path="/Music" render={()=><Music/>} />
