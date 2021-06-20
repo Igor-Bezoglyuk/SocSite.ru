@@ -13,18 +13,26 @@ const Users = (props) =>{
 const Mail = (props) =>{
 
   return(
-     <div class="Massage-Posts d-block mx-auto m-3 p-2">
+    <>
+     <div class="Massage-Posts d-block float-end m-3 p-2">
      <img class="Massage-Posts-Img float-start me-3" src={Avatar} alt={"Avatar"}/>
      <h6 class="Massage-Posts-Title fs-5 fw-normal">{props.LogoName}</h6>
      <p class="Massage-Posts-Stroka fw-light">{props.Stroka}</p>
      </div>
+
+     <div class="Massage-Posts d-block float-start m-3 p-2">
+     <img class="Massage-Posts-Img float-start me-3" src={Avatar} alt={"Avatar"}/>
+     <h6 class="Massage-Posts-Title fs-5 fw-normal">{props.LogoName2}</h6>
+     <p class="Massage-Posts-Stroka fw-light">{props.Stroka2}</p>
+     </div>
+    </>
 
   );
 }
 const Massage = (props) => {
 
   let dialMAP = props.dialogs.map(d => <Users name={d.name} id={d.id}/>)
-  let massMAP = props.massage.map(m => <Mail LogoName={m.LogoName} Stroka={m.Stroka}/>)
+  let massMAP = props.massage.map(m => <Mail LogoName={m.LogoName} Stroka={m.Stroka} LogoName2={m.LogoName2} Stroka2={m.Stroka2}/>)
 
   let newMessageElement= React.createRef();
 
