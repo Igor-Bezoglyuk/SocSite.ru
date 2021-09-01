@@ -1,59 +1,35 @@
+import React from "react";
 import logo from './logo.svg';
 import './App.css';
-import './img/Logo.jpg';
-import Header from'./header.js';
-import Footer from'./footer.js';
-import VerMenu from'./VerMenu.js';
-import Profile from'./Profile.js';
-import PostCreate from'./PostCreate.js';
-import Massage from'./massage.js';
-import News from'./News.js';
-import Music from'./Music.js';
-import Game from'./Game.js';
-import Option from'./Option.js';
-import{BrowserRouter,Route}from"react-router-dom";
+import Header from './Components/header.js';
+import Menu from './Components/menu.js';
+import Footer from './Components/footer.js';
+import Home from './pages/Home.js';
+import Massage from './pages/Massage.js';
+import News from './pages/News.js';
+import Music from './pages/Music.js';
+import Games from './pages/Games.js';
+import Option from './pages/Option.js';
+import { BrowserRouter,Route} from "react-router-dom";
 
-const App =()=> {
+
+const App = (props) => {
   return (
-    <div>
-    <BrowserRouter>
-    <Header/>
-    <div>
-    <VerMenu/>
-    <Route path='/Profile' component={Profile}/>
-    <Route path='/Massage'component={Massage}/>
-    <Route path='/News'component={News}/>
-    <Route path='/Music'component={Music}/>
-    <Route path='/Game'component={Game}/>
-    <Route path='/Option'component={Option}/>
+  	<BrowserRouter>
+  	<div className="App">
+  	<Header/>
+  	<div>
+  	<Menu/>
+  	<Route path="/Home" render={()=><Home postCreate={props.dataArray.postCreate} addPost1={props.addPost1} addImg1={props.addImg1}/>}/>
+  	<Route path="/Massage" render={()=><Massage dialogs={props.dataArray.dialogs}  massage={props.dataArray.massage} addPost2={props.addPost2}/>} />
+  	<Route path="/News" render={()=><News/>} />
+  	<Route path="/Music" render={()=><Music/>} />
+  	<Route path="/Games" render={()=><Games/>} />
+  	<Route path="/Option" render={()=><Option/>} />
+  	</div>
     </div>
-    {/*<Profile/>*/}
-    <Footer/>
     </BrowserRouter>
-    </div>
   );
 }
-
-
-
-
-    //<div className="App">
-      //<header className="App-header">
-        //<img src={logo} className="App-logo" alt="logo" />
-        //<p>
-          //Edit <code>src/App.js</code> and save to reload.
-        //</p>
-        //<a
-          //className="App-link"
-          //href="https://reactjs.org"
-          //target="_blank"
-          //rel="noopener noreferrer"
-        //>
-        //  Learn React
-      //  </a>
-    //  </header>
-    //</div>
-//  );
-//}
 
 export default App;

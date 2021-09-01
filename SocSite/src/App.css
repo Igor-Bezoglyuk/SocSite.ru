@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -37,115 +38,200 @@
   }
 }
 
-
-body{
-	margin:0px;
-	font-family: roboto,arial,sans-serif, monospace;
-}
-.header{
-	position: relative;
-	top: 0;
-	right: 0%;
-	width: 100%;
-	height:auto;
-	z-index: 999;
-}
-.Menu{
-	position: relative;
-	top: 0;
-	right: 0%;
-	width: 200px;
-	background: whitesmoke;
-	list-style: none;
-	border-radius: 0px 0px 10px 0px;
-	padding:20px;
-}
-.Menuli{
-	position: relative;
-	top: 0;
-	right: 0%;
-	text-align: left;
-	font-family: roboto;
-	font-size: 17px;
-	font-weight: 300px;
-	display: block;
-	margin-bottom:25px;
-}
-.MenuSilka{
-	position: relative;
-	text-decoration: none;
-	color: grey;
-}
 /*____________________________________________________________________________________________________________*/
 
+
+body{
+  margin:0px;
+  font-family: roboto,arial,sans-serif, monospace;
+}
+.header{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height:auto;
+  z-index: 999;
+}
+.Menu{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 200px;
+  background: whitesmoke;
+  list-style: none;
+  border-radius: 0px 0px 10px 0px;
+  padding:20px;
+  z-index: 999;
+}
+.Menuli{
+  position: relative;
+  top: 0;
+  right: 0%;
+  text-align: left;
+  font-family: roboto;
+  font-size: 17px;
+  font-weight: 300px;
+  display: block;
+  margin-bottom:25px;
+}
+.MenuSilka{
+  position: relative;
+  text-decoration: none;
+  color: grey;
+}
+
+/*____________________________________________________________________________________________________________*/
 #article{
-	position: relative;
-	top: 0;
-	right: 0%;
-	width: 100%;
-	height: 100%;
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: auto;
 }
 /*____________________________________________________________________________________________________________*/
 #Kontent{
-	position: relative;
-	top: 0;
-	right: 0%;
-	width: 100%;
-	height:auto;
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height:880px;
 }
 #Kontentblock{
-	position: relative;
-	top: 0;
-	right: 0%;
-	width:981px;
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 80%;
 }
 .Kontent-Block-img{
-	position: relative;
-	width: 100%;
-	height: 200px;
-	background: url(img/BackHeader.jpg) no-repeat 50% 50%/65em;
+  position: relative;
+  width: 100%;
+  height: 250px;
+  background: url(./img/BackHeader.jpg) no-repeat 50% 50%/100em;
 }
 .Kontent-Profil-Block{
-	position: relative;
-	top: 0;
-	right: 0%;
-	width:610px;
+  position: relative;
+  top: 0;
+  right: 0%;
+  width:610px;
 }
 
 .Kontent-profile-img{
-	position: relative;
-	top: 0;
-	right: 0%;
-	width: 300px;
-	height:300px;
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 300px;
+  height:300px;
   display: inline-block;
-  background: url(img/Logo.jpg) no-repeat 50% 50%/100%;
+  background: url(./img/Logo.jpg) no-repeat 50% 50%/100%;
 }
 .spisok-profile{
-	position: relative;
-	top: 0;
-	right: 0%;
+  position: relative;
+  top: 0;
+  right: 0%;
     width: 300px;
     list-style: none;
     padding:0px;
     border:solid 1px grey;
 }
 .spisok-profile-li{
-	font-family:roboto;
-	font-size: 19px;
-	font-weight: 400;
-	margin-bottom:20px;
-	border-bottom: solid 1px grey;
-	padding:5px;
+  font-family:roboto;
+  font-size: 19px;
+  font-weight: 400;
+  margin-bottom:20px;
+  border-bottom: solid 1px grey;
+  padding:5px;
 }
-.PostImg{
+.Create-Post{
   position: relative;
-  width: 90px;
-  height: 90px;
-  background: url(./img/postimg.png)50% 50%/100%;
-}
-.PostTitle{
-  position: relative;
-  top:10px;
+  top: 0;
+  right: 0%;
+  width: 75%;
+  height: auto;
 }
 /*____________________________________________________________________________________________________________*/
+
+#Kontent2{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: 900px;
+  background: grey;
+}
+
+/*____________________________________________________________________________________________________________*/
+#MassageContent{
+  position:relative;
+  top: 0;
+  right:0%;
+  width: 100%;
+  height: auto;
+}
+.Massage-Blocks{
+  position:relative;
+  top:0;
+  right: 0%;
+  display: inline-block;
+  margin:5px;
+}
+.Massage-Spisok{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 25%;
+}
+.Massage-Spisok-Li{
+  position: relative;
+  top: 0;
+  right: 0%;
+  font-family: roboto;
+  margin:10px;
+  padding-top:40px ;
+  transition: 0.4s;
+}
+.Massage-Spisok-Li:hover{
+  transform: scale(1.2);
+}
+.Massage-Spisok-silka{
+  position: relative;
+  top: 0;
+  right:0%;
+  text-decoration: none;
+  color: #282c34;
+  cursor: pointer;
+}
+.Massage-Spisok-silka:hover{
+  color: black;
+}
+.Massage-Posts{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 30%;
+  text-align: left;
+  font-family: Roboto;
+  background: whiteSmoke;
+  border-radius:10px;
+}
+.Massage-Posts-Img{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 80px;
+  height: 80px;
+}
+.Post-Img{
+ position: relative;
+ top: 0;
+ width: 100px;
+}
+/*____________________________________________________________________________________________________________*/
+#footer{
+  position: relative;
+  top: 0;
+  right: 0%;
+  width: 100%;
+  height: 200px;
+  background: #f8f9fa;
+}
